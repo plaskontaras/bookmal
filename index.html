@@ -11,15 +11,13 @@
 <!-- HEADER -->
 	<header class="header">
 		<div class="header__left-block">
-			<div class="header__logo header__logo_position header__logo_size">
-				<img src="images/Logo.svg" alt="logo">
+			<div>
+				<img src="images/Logo.svg" alt="logo" class="header__logo header__logo_theme">
 			</div>
-			<div class="">
-				<select class="header__select header__sort-button header__sort-button_position header__sort-button_theme">
-	                <option value="for-all">Для усіх</option>
-	                <option value="not-for-all">Не для усіх</option>
-	            </select>
-			</div>
+			<select class="header__select  header__select_theme">
+                <option value="for-all">Для усіх</option>
+                <option value="not-for-all">Не для усіх</option>
+            </select>
 		</div>
 		<div class="header__right-block">
 			<ul class="nav-links">
@@ -27,11 +25,11 @@
 				<li><a href="#" class="nav-link__item">Співпраця</a></li>
 				<li><a href="#" class="nav-link__item">Підтримка</a></li>
 			</ul>
-			<div class="header__icon header__search-icon header__icon_styles">
-				<img src="images/UI/magnifier.svg" alt="magnifier">
+			<div>
+				<img src="images/UI/magnifier.svg" alt="magnifier" class="header__icon header__search-icon header__icon_theme">
 			</div>
-			<div class="header__icon header__bookmark-icon header__icon_styles">
-				<img src="images/UI/bookmark.svg" alt="bookmark">
+			<div>
+				<img src="images/UI/bookmark.svg" alt="bookmark"  class="header__icon header__bookmark-icon header__icon_theme">
 			</div>
 		</div>
 	</header>
@@ -41,105 +39,110 @@
 		<img src="images/UI/burger.svg" alt="menu button">
 	</div>
 
-
 <!-- FIRST BLOCK -->
 	<section class="block-content first-block">
-		<div class="first-block__content">
-			<h4>Корисні статті</h4>
-			<h1>Дітям про тварин: любити, знати, захищати</h1>
-			<div>
+		<div class="block-content__info first-block_layout">
+			<h4 class="block-content__header_theme">Корисні статті</h4>
+			<h1 class="first-block__header_theme">Дітям про тварин: любити, знати, захищати</h1>
+			<div class="block-content__info_theme_dark">
 				<div>
-					<img src="images/UI/calendar.svg" alt="calendar">
-					<span>28 вересня, 2017</span>
-					<img src="images/UI/eye.svg" alt="calendar">
-					<span>2045</span>
+					<span class="first-block_icon"><img src="images/UI/calendar-grey.svg" alt="calendar-grey"> 1 жовтня, 2017</span>
+					<span class="first-block_icon"><img src="images/UI/eye-grey.svg" alt="calendar-grey"> 223</span>
 				</div>	
 			</div>
 			<div>
-				<input type="button" value="Читати">
-				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
-				</div>
+				<input class="button_theme first-block__button_layout" type="button" value="Читати">
+				<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 			</div>				
 		</div>
 	</section>
-	
+
+<!-- SORT BLOCK -->
 	<section class="block-content sort-block">
+		<form>
 			Сортувати за:
+			<input type="radio" name="sort" value="">
+			<label for="">Популярністю</label>
+			<input type="radio" name="sort" value=""> 
+			<label for="">Новизною</label>
+		</form> 
 	</section>
 
+
+<!-- SECOND BLOCK -->
 	<section class="block-content second-block">
-		<div>image here with red border bottom</div>
-		<h4>Огляди</h4>
-		<div>
-			<div>
-				<div>
-					<img src="images/UI/calendar.svg" alt="calendar">
-					<span>28 вересня, 2017</span>
-					<img src="images/UI/eye.svg" alt="calendar">
-					<span>2045</span>
-				</div>		
-			</div>
-			<h2>Шість пригодницьких історій для літнього читання</h2>
-			<input type="button" value="Читати">
-			<div>
-				<img src="images/UI/bookmark.svg" alt="bookmark">
-			</div>
+		<div class="block-content__image_position">
+			<img src="images/common/ravlik.jpg" alt="ravlik" class="block-content__image_size">
 		</div>
+			<h4 class="block-content__header_theme second-block__header_position">Огляди</h4>
+			<div class="block-content__info_theme_white second-block__info_position">
+				<div>
+					<div>
+						<span><img src="images/UI/calendar.svg" alt="calendar" class="second-block_icon"> Сьогодні</span>
+						<span><img src="images/UI/eye.svg" alt="eye" class="second-block_icon"> 12</span>
+					</div>		
+				</div>
+				<h2 class="block-content__info_font">Шість пригодницьких історій для літнього читання</h2>
+				<input class="button_theme button_position" type="button" value="Читати">
+				<div>
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
+				</div>
+			</div>
 	</section>
 
+<!-- THIRD BLOCK -->
 	<section class="block-content third-block teen-review">
 		<h3>TEEN REVIEW</h3>
-		<div>
+		<div class="teen-review_theme">
 			<div>
-				<h4>Огляди</h4>
+				<h4 class="block-content__header_theme">Огляди</h4>
 				<div>
-					image here
+					<img src="images/common/Book.png" alt="book">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>2045</span>
 					</div>	
 				</div>
 				<p>	&laquo;Поміж сірих сутінків&raquo; Рути Шептіс: на противагу зброї</p>
 			</div>
 			<div>
-				<h4>Новини</h4>
+				<h4 class="block-content__header_theme">Новини</h4>
 				<div>
-					image here
+					<img src="images/common/Knowledge.png" alt="knowledge">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>8 листопада, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>3045</span>
 					</div>	
 				</div>
 				<p>У столиці запустили соціальний проект &laquo;Київ читає&raquo;</p>
 			</div>
 			<div>
-				<h4>Фільми</h4>
+				<h4 class="block-content__header_theme">Фільми</h4>
 				<div>
-					image here
+					<img src="images/common/photo.png" alt="photo">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>6345</span>
 					</div>	
 				</div>
@@ -148,78 +151,79 @@
 		</div>
 	</section>
 
+<!-- FOURTH BLOCK -->
+	<h4  class="block-content__header_theme">Поради</h4>
 	<section class="block-content fourth-block">
-		<div>image here with red border bottom</div>
-		<h4>Поради</h4>
-		<div>
+		<div class="block-content__info_theme_white fourth-block_layout">
 			<div>
 				<div>
-					<img src="images/UI/calendar.svg" alt="calendar">
+					<img src="images/UI/calendar.svg" alt="calendar" class="second-block_icon">
 					<span>28 вересня, 2017</span>
-					<img src="images/UI/eye.svg" alt="calendar">
+					<img src="images/UI/eye.svg" alt="calendar" class="second-block_icon">
 					<span>6345</span>
 				</div>	
 			</div>
-			<h2>&laquo;Любий щоденнику...&raquo;: ваш &laquo;настільний&raquo; психоаналітик</h2>
-			<input type="button" value="Читати">
+			<h2 class="block-content__info_font">&laquo;Любий щоденнику...&raquo;: ваш &laquo;настільний&raquo; психоаналітик</h2>
+			<input class="button_theme" type="button" value="Читати">
 			<div>
-				<img src="images/UI/bookmark.svg" alt="bookmark">
+				<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 			</div>
 		</div>
 	</section>
 
+<!-- FIFTH BLOCK -->
 	<section class="block-content fifth-block teen-review">
 		<h3>TEEN REVIEW</h3>
-		<div>
+		<div class="teen-review_theme">
 			<div>
-				<h4>Огляди</h4>
+				<h4 class="block-content__header_theme">Огляди</h4>
 				<div>
-					image here
+					<img src="images/common/Creatures.png" alt="creatures">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>2045</span>
 					</div>	
 				</div>
 				<p>	&laquo;Поміж сірих сутінків&raquo; Рути Шептіс: на противагу зброї</p>
 			</div>
 			<div>
-				<h4>Новини</h4>
+				<h4 class="block-content__header_theme">Новини</h4>
 				<div>
-					image here
+					<img src="images/common/Seasons.png" alt="seasons">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>8 листопада, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>3045</span>
 					</div>	
 				</div>
 				<p>У столиці запустили соціальний проект &laquo;Київ читає&raquo;</p>
 			</div>
 			<div>
-				<h4>Фільми</h4>
+				<h4 class="block-content__header_theme">Фільми</h4>
 				<div>
-					image here
+					<img src="images/common/Relations.png" alt="relations">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>6345</span>
 					</div>	
 				</div>
@@ -228,97 +232,80 @@
 		</div>
 	</section>
 
+<!-- SIXTH BLOCK -->
 	<section class="block-content sixth-block">
-		<div>image here with red border bottom</div>
-		<h4>Огляди</h4>
-		<div>
+		<div class="sixth-block_position">
+			<img src="images/common/beavers.jpg" alt="beavers" class="block-content__image_size sixth-block__image_position">
+		</div>
+		<h4 class="block-content__header_theme">Огляди</h4>
+		<div class="block-content__info_theme_white sixth-block__info_position">
 			<div>
-				<div>date</div>
-				<div>watch</div>	
+				<div>
+					<span><img src="images/UI/calendar.svg" alt="calendar" class="second-block_icon"> 28 вересня, 2017</span>
+					<span><img src="images/UI/eye.svg" alt="eye" class="second-block_icon"> 2045</span>
+				</div>	
 			</div>
-			<h2>Шість пригодницьких історій для літнього читання</h2>
-			<input type="button" value="Читати">
+			<h2 class="block-content__info_font">Бути разом із Туве Янсоен: 5 диваків Долини мумі тролів</h2>
+			<input class="button_theme button_position" type="button" value="Читати">
 			<div>
-				<img src="images/UI/bookmark.svg" alt="bookmark">
+				<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 			</div>
 		</div>
 	</section>
 
+<!-- SEVENTH BLOCK -->
 	<section class="block-content seventh-block teen-review">
 		<h3>TEEN REVIEW</h3>
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-
-	<section class="second-block">
-		<div>image here with red border bottom</div>
-		<h4>Огляди</h4>
-		<div>
+		<div class="teen-review_theme">
 			<div>
-				<div>date</div>
-				<div>watch</div>	
-			</div>
-			<h2>Шість пригодницьких історій для літнього читання</h2>
-			<input type="button" value="Читати">
-			<div>
-				<img src="images/UI/bookmark.svg" alt="bookmark">
-			</div>
-		</div>
-	</section>
-
-	<section class="block-content eight-block teen-review">
-		<h3>TEEN REVIEW</h3>
-		<div>
-			<div>
-				<h4>Огляди</h4>
+				<h4 class="block-content__header_theme">Огляди</h4>
 				<div>
-					image here
+					<img src="images/common/Relations.png" alt="relations">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>2045</span>
 					</div>	
 				</div>
 				<p>&laquo;Поміж сірих сутінків&raquo; Рути Шептіс: на противагу зброї</p>
 			</div>
 			<div>
-				<h4>Новини</h4>
+				<h4 class="block-content__header_theme">Новини</h4>
 				<div>
-					image here
+					<img src="images/common/Gallery.png" alt="gallery">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>8 листопада, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>3045</span>
 					</div>	
 				</div>
 				<p>У столиці запустили соціальний проект &laquo;Київ читає&raquo;</p>
 			</div>
 			<div>
-				<h4>Фільми</h4>
+				<h4 class="block-content__header_theme">Фільми</h4>
 				<div>
-					image here
+					<img src="images/common/Art.png" alt="art">
 				</div>
 				<div>
-					<img src="images/UI/bookmark.svg" alt="bookmark">
+					<img src="images/UI/bookmark_big.svg" alt="bookmark_big">
 				</div>
 				<div>
 					<div>
-						<img src="images/UI/calendar.svg" alt="calendar">
+						<img src="images/UI/calendar-grey.svg" alt="calendar-grey">
 						<span>28 вересня, 2017</span>
-						<img src="images/UI/eye.svg" alt="calendar">
+						<img src="images/UI/eye-grey.svg" alt="calendar-grey">
 						<span>6345</span>
 					</div>	
 				</div>
@@ -327,8 +314,8 @@
 		</div>
 	</section>
 
+<!-- FOOTER -->
 	<footer class="block-content footer">
-		<div>
 			<div>
 				<p>Підписуйтесь на новини від Bookmal</p>
 				<p>E-Mail</p>
@@ -344,8 +331,6 @@
 			<div>
 				<p>&copy; 2017 Букмоль. Незалежний культурний проект для дітей, їхніх батьків та усіх-усіх небійдужих й охочих до читання. Всі права захищені. Використання будь-яких матеріалів, розміщених на сайті, дозволяється за умови посилання на Bookmail.com.ua</p>
 			</div>
-		</div>
-		<div></div>
 	</footer>
 </body>
 </html>

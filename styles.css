@@ -1,10 +1,7 @@
-/*BODY STYLES*/
+
 .block-content {
-	margin: 0 5%;
+	margin: 20px 5%;
 }
-
-
-/*HEADER STYLES*/
 
 .header {
 	display: flex;
@@ -19,25 +16,27 @@
 	display: flex;
 }
 
-.header__logo_position {
-	padding: 0 15px;
+.header__logo_theme {
+	width: 160px;
+	margin: 15px;
 }
 
-.header__logo_size {
-	width: 150px;
+.header__select_theme {
+	border: none;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 45px;
+	margin-top: 10px;
+	padding-left: 30px;
+	background-color: orange;
+	height: 45px;
+	width: 170px;
+	outline: none;
 }
 
-.header__sort-button_theme {
-	border-radius: 15px;
-	padding: 0 10px;
-	background-color: red;
-	font-size: 15px; 
-	text-align: center;
-}
-
-.header__sort-button_position {
-	padding: 10px;
-	padding-top: 0; 
+.header__right-block {
+	margin-right: 140px;
 }
 
 .nav-links {
@@ -48,10 +47,13 @@
 	text-decoration: none;
 	color: black;
 	padding: 0 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
-.header__icon_styles {
-	padding: 10px;
+.header__icon_theme {
+	padding: 15px;
+	width: 25px;
 }
 
 /*ASIDE MENU*/
@@ -61,11 +63,160 @@
 	left: 20px;
 }
 
+/*FIRST BLOCK*/
 .first-block {
-	background-image: url("images/common/bearBears2.jpg");
+	background-image: url("images/common/bearBears.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 400px;
+	height: 800px;
+	display: flex;
+	align-items: center;
+}
+
+.first-block__header_theme {
+	color: white;
+	font-size: 60px;
+	width: 70%;
+}
+
+.first-block_layout {
+	padding-left: 70px;
+}
+
+.first-block_icon {
+	margin: 20px;
+}
+
+.first-block__button_layout {
+	margin-right: 30px;
+}
+
+/*SECOND BLOCK*/
+.second-block__info_position {
+	position: relative;
+	left: 40%;
+}
+
+.second-block__header_position {
+	text-align: right;
+}
+
+.second-block_icon {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.block-content__info_font {
+	font-size: 40px;
+	width: 150%;
+	padding-left: 20px;
+}
+
+.button_position {
+	margin: 20px;
+}
+
+/*THIRD BLOCK*/
+.second-block__info_position {
+	position: relative;
+	left: 40%;
+}
+
+.second-block_icon {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+/*FOURTH BLOCK*/
+.fourth-block{
+	display: flex;
+	align-items: center;
+	height: 500px;
+}
+
+.fourth-block_layout {
+	margin-left: 50px;
+}
+
+/*FIFTH BLOCK*/
+.second-block__info_position {
+	position: relative;
+	left: 40%;
+}
+
+/*SIXTH BLOCK*/
+.sixth-block__image_position {
+
+	margin-left: 50%;
+}
+
+ .sixth-block__info_position {
+	position: relative;
+	left: 20%;
+} 
+
+.sixth-block_position {
+	position: absolute;
 }
 
 
+
+/*BLOCK CONTENTS*/
+.block-content__header_theme {
+	color: orange;
+	font-size: 30px;
+ }
+
+ .block-content__image_size {
+ 	width: 40%;
+ 	border-bottom: 5px solid red;
+ }
+
+ .block-content__info_theme_white {
+	border: 2px solid grey;
+	background-color: white; 
+	width: 600px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+ }
+
+ .block-content__info_theme_dark {
+ 	color: white;
+ 	font-size: 20px;
+ 	margin-bottom: 50px;
+ }
+
+.button_theme {
+	background-color: orange;
+	border-radius: 20px;
+	width: 120px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.block-content__image_position {
+	position: absolute;
+}
+
+/*TEEN REVIEW*/
+
+.teen-review {
+	background-color: lightgrey;
+}
+
+.teen-review_theme {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fourth-block {
+	background-image: url("images/common/cute-brain-cartoon.jpg");
+	background-size: cover;
+}
+
+.footer {
+	display: flex;
+	background-color: lightgrey;
+	margin-top: 100px;
+}

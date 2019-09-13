@@ -1,4 +1,8 @@
 /*BODY STYLES*/
+.block-content {
+	margin: 0 5%;
+}
+
 
 /*HEADER STYLES*/
 
@@ -14,4 +18,54 @@
 .header__right-block {
 	display: flex;
 }
+
+.header__logo_position {
+	padding: 0 15px;
+}
+
+.header__logo_size {
+	width: 150px;
+}
+
+.header__sort-button_theme {
+	border-radius: 15px;
+	padding: 0 10px;
+	background-color: red;
+	font-size: 15px; 
+	text-align: center;
+}
+
+.header__sort-button_position {
+	padding: 10px;
+	padding-top: 0; 
+}
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+}
+.nav-link__item  {
+	text-decoration: none;
+	color: black;
+	padding: 0 20px;
+}
+
+.header__icon_styles {
+	padding: 10px;
+}
+
+/*ASIDE MENU*/
+.aside-menu_theme {
+	position: fixed;
+	top: 80px;
+	left: 20px;
+}
+
+.first-block {
+	background-image: url("images/common/bearBears2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
 

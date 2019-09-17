@@ -1,222 +1,352 @@
-
-.block-content {
-	margin: 20px 5%;
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('fonts/ProximaNova-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Th';
+	src: url('fonts/ProximaNova-Extrabld.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('fonts/Lora-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('fonts/Lora-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Proxima Nova Rg';
+}
+
+.body {
+	font-size: 100%;
+}
+
+.page {
+	width: 90%;
+	margin: 10px auto;
+}
+
+/*HEADER*/
 .header {
 	display: flex;
 	justify-content: space-between;
 }
 
-.header__left-block {
-	display: flex;
-}
-
-.header__right-block {
-	display: flex;
+.header__left-block_theme {
+	width: 50%;
 }
 
 .header__logo_theme {
-	width: 160px;
-	margin: 15px;
+	width: 25%;
+	border-right: 1px solid #c7c6c8;
+	padding-right: 3%;
 }
 
-.header__select_theme {
-	border: none;
-	border-radius: 20px;
+.select-button {
+	width: 20%;
+	min-width: 90px;
 	font-weight: bold;
-	font-size: 20px;
-	margin-left: 45px;
-	margin-top: 10px;
-	padding-left: 30px;
-	background-color: orange;
-	height: 45px;
-	width: 170px;
-	outline: none;
+	font-size: 1.2vw;
+	background-color: #f94f4c;
+	border-radius: 15px;
+	padding: 5px;
+	padding-left: 15px;
+	margin-left: 3%;
 }
 
-.header__right-block {
-	margin-right: 140px;
-}
-
-.nav-links {
-	list-style-type: none;
+.header__right-block_theme {
+	width: 50%;
 	display: flex;
+	justify-content: flex-end;
 }
-.nav-link__item  {
+
+.nav-list_theme {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.3vw;
+}
+
+.nav-list__item_theme {
+	 display: inline-block;
+}
+.nav-list__link_theme  {
 	text-decoration: none;
-	color: black;
-	padding: 0 20px;
-	font-weight: bold;
-	font-size: 20px;
+	color: #000;
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
 }
 
-.header__icon_theme {
-	padding: 15px;
-	width: 25px;
-}
-
-/*ASIDE MENU*/
-.aside-menu_theme {
+/*SIDE MENU*/
+.side-menu_position {
 	position: fixed;
-	top: 80px;
-	left: 20px;
+	top: 10px;
+	left: 1%;
 }
 
 /*FIRST BLOCK*/
-.first-block {
+.first-block_display {
+	display: flex;
+	align-items: center;
 	background-image: url("images/common/bearBears.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 800px;
-	display: flex;
-	align-items: center;
+	margin-bottom: 20px;
+}
+
+.first-block__content_margin {
+	margin: 10%;
+}
+
+.block-content__subheader_theme {
+	color: #ffc830;
+	font-family: 'Proxima Nova Rg';
+	font-size: 1.2vw;
+	text-transform: uppercase;
+}
+
+.first-block__info_theme,
+.first-block__header_theme {
+	color: #fff;
 }
 
 .first-block__header_theme {
-	color: white;
-	font-size: 60px;
-	width: 70%;
+	font-family: 'Lora';
+	font-size: 3vw;
 }
 
-.first-block_layout {
-	padding-left: 70px;
+.first-block__button-and-bookmark_theme {
+	display: flex;
+	margin-top: 50px;
 }
 
-.first-block_icon {
-	margin: 20px;
+.button_theme {
+	background-color: #ffc830;
+	border-radius: 15px;
+	padding: 7px 12px;
+	font-family: 'Proxima Nova Th';
 }
 
-.first-block__button_layout {
-	margin-right: 30px;
+.first-block__bookmark_margin {
+	margin-left: 20px;
+}
+
+.sort-block__input_display_none {
+	display: none;
 }
 
 /*SECOND BLOCK*/
-.second-block__info_position {
-	position: relative;
-	left: 40%;
+
+.second-block_max-height {
+	max-height: 300px;
 }
 
-.second-block__header_position {
+.second-block__subheader_align {
 	text-align: right;
 }
 
-.second-block_icon {
-	margin-left: 30px;
-	margin-top: 30px;
+.second-block__white-block_position {
+	left: 90%;
+	bottom: 250px;	
 }
 
-.block-content__info_font {
-	font-size: 40px;
-	width: 150%;
-	padding-left: 20px;
+.second-block__header_theme {
+	margin-left: 5%;
+	width: 120%;
+	font-family: 'Proxima Nova Th'; 
+	font-size: 2vw;
 }
 
-.button_position {
-	margin: 20px;
-}
-
-/*THIRD BLOCK*/
-.second-block__info_position {
-	position: relative;
-	left: 40%;
-}
-
-.second-block_icon {
-	margin-left: 30px;
-	margin-top: 30px;
+.second-block__bookmark_position_absolute {
+	position: absolute;
+	left: 90%;
+	top: -10px;
 }
 
 /*FOURTH BLOCK*/
-.fourth-block{
-	display: flex;
-	align-items: center;
-	height: 500px;
+
+.fourth-block__bg-block_bg {
+	background-image: url("images/common/cute-brain-cartoon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.fourth-block_layout {
-	margin-left: 50px;
+.fourth-block__white-block_theme {
+	width: 45%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin-left: 10%;
 }
 
-/*FIFTH BLOCK*/
-.second-block__info_position {
-	position: relative;
-	left: 40%;
+.fourth-block__subheader_align {
+	text-align: left;
 }
 
-/*SIXTH BLOCK*/
-.sixth-block__image_position {
-
-	margin-left: 50%;
+.fourth-block__header_theme {
+	margin-left: 5%;
+	font-family: 'Proxima Nova Th'; 
+	font-size: 2vw;
 }
 
- .sixth-block__info_position {
-	position: relative;
-	left: 20%;
-} 
-
-.sixth-block_position {
+.fourth-block__bookmark_position_absolute {
 	position: absolute;
+	left: 90%;
+	top: -10px;
 }
 
-
-
-/*BLOCK CONTENTS*/
-.block-content__header_theme {
-	color: orange;
-	font-size: 30px;
- }
-
- .block-content__image_size {
- 	width: 40%;
- 	border-bottom: 5px solid red;
- }
-
- .block-content__info_theme_white {
-	border: 2px solid grey;
-	background-color: white; 
-	width: 600px;
+/*SIX BLOCK*/
+.six-block_max-height {
 	height: 350px;
-	display: flex;
-	flex-direction: column;
- }
-
- .block-content__info_theme_dark {
- 	color: white;
- 	font-size: 20px;
- 	margin-bottom: 50px;
- }
-
-.button_theme {
-	background-color: orange;
-	border-radius: 20px;
-	width: 120px;
-	padding: 5px;
-	font-size: 20px;
 }
 
-.block-content__image_position {
+.six-block__subheader_align {
+	text-align: left;
+}
+
+.six-block__white-block_position {
+	right: 90%;
+	bottom: 250px;	
+}
+
+.six-block__header_theme {
+	margin-left: 5%;
+	width: 120%;
+	font-family: 'Proxima Nova Th'; 
+	font-size: 2vw;
+}
+
+.six-block__bookmark_position_absolute {
 	position: absolute;
+	left: 90%;
+	top: -10px;
 }
+
+.six-block__content_float {
+	display: inline-block;
+	margin-left: 55%;
+}
+
+
+/*BLOCK CONTENT*/
+.block-content__image-block_width {
+	width: 45%;
+	margin-top: 20px;
+}
+
+.block-content__image_width {
+	width: 100%;
+	border-bottom: 4px solid #fd504c;
+}
+
+.block-content__white-block_theme {
+	width: 100%;
+	position: relative;
+}
+
+.block-content__white-block_border {
+	border: 2px solid #c9c8ca;
+	background-color: white;
+}
+
+.block-content__info_theme {
+	margin: 5%;
+}
+
+.block_icon {
+	margin-right: 5%;
+}
+
+.white-block__button_margin {
+	margin: 5%;
+}
+
+.white-block__bookmark_position_relative {
+	position: relative;
+}
+
+.block-content__bookmark_width {
+	width: 5%;
+}
+
 
 /*TEEN REVIEW*/
-
-.teen-review {
-	background-color: lightgrey;
+.teen-review_bgcolor {
+	background-color: #f7f7f9;
 }
 
-.teen-review_theme {
+.teen-review_header_theme {
+	text-align: left;
+	color: #cbcacc;
+	padding: 10px;
+	font-family:  'Proxima Nova Rg';
+	font-weight: normal;
+}
+
+.teen-review__articles_display {
 	display: flex;
 	justify-content: space-between;
 }
 
-.fourth-block {
-	background-image: url("images/common/cute-brain-cartoon.jpg");
-	background-size: cover;
+.teen-review__article_width {
+	width: 30%;
 }
 
+.article__image_size {
+	width: 100%;
+}
+
+.article__bookmark_position_absolute {
+	position: relative;
+	bottom: 15px;
+	left: 90%;
+	width: 20px;
+}
+.article__header_theme {
+	font-family: 'Proxima Nova Rg';
+	font-size: 1.5vw;
+}
+
+/*FOOTER*/
 .footer {
 	display: flex;
-	background-color: lightgrey;
+	justify-content: space-around;
+	background-color: #ebecf0;
 	margin-top: 100px;
+	color: #97949d;
+	font-size: 1vw;
+}
+
+.footer-subblock_size {
+	width: 300px;
+}
+
+.footer-subblock__email_theme {
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+.footer_soial-icons-block_display {
+	display: flex;
+}
+
+.footer_soial-icons-block_display img {
+	padding: 10px;
+}
+
+.footer__arrow_padding {
+	padding-left: 90%;
 }
